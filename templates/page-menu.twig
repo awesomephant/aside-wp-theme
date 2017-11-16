@@ -1,0 +1,15 @@
+{% extends "base.twig" %}
+{% block content %}
+<script type="text/javascript" src="https://www.simpleerb.com/8724/aside/init/"></script>
+      <h1 class='home-title'>Menu</h1>
+    <ul class="menu">
+         {% for item in post.get_field('menu_items')%}
+            <li class='menu-item'>
+                <h2 class='menu-item-title'>{{item.title}}</h2>
+                <p class="menu-item-description">{{item.description}}</p>
+                <span class="menu-item-price">{{item.price}}</span>
+            </section>
+      {% endfor %}
+    
+    </ul>
+{% endblock %}

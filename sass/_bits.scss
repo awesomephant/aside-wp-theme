@@ -1,0 +1,21 @@
+ @font-face {
+      font-family: "Larish";
+      src: url("./fonts/larish_neue.otf") format("opentype");
+}
+
+$larish: Larish, Georgia, 'Times New Roman', serif;
+$pink: #FFD4CC;
+$black: rgb(32,30,35);
+$lightgray: rgb(231,231,231);
+
+@mixin bp($point) {
+  @if $point == l {
+    @media (min-width: 65rem) { @content; }
+  }
+  @else if $point == m {
+    @media (min-width: 45rem) { @content; }
+  }
+  @else if $point == s {
+    @media (min-width: 35rem)  { @content; }
+  }
+}

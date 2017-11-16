@@ -1,0 +1,20 @@
+{% extends "base.twig" %}
+{% block content %}
+<script type="text/javascript" src="https://www.simpleerb.com/8724/aside/init/"></script>
+
+    <div class="home-hero" id='js-imageContainer'>
+      <h1 class='home-title'>Aside</h1>
+    </div>
+        <div class='home-info'>
+      {% for section in post.get_field('home_sections')%}
+            <section>
+                <h2>{{section.title}}</h2>
+                <div class="home-section-content">{{section.content}}</div>
+            </section>
+      {% endfor %}
+    </div>
+    <script>
+    const imageUrls = [{% for image in post.get_field('hero_images') %}"{{TimberImage(image).src | resize(800)}}",{% endfor %}]
+    {% include "./js/arrange-images.js" %}
+    </script>
+{% endblock %}

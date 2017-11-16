@@ -1,0 +1,44 @@
+body {
+    background: $lightgray;
+    font-family: $larish;
+}
+
+.site-header {
+    position: fixed;
+    z-index: -100;
+    width: 100%;
+    padding-top: 1rem;
+    text-align: left;
+}
+.site-title {
+    color: white;
+    font-size: 6vw;
+    letter-spacing: .01em;
+}
+
+.site-footer {
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    @include bp(m){
+        flex-direction: row;
+    }
+
+    p {
+        @include bp(m){
+            padding-right: 2rem;
+        }
+    }
+
+    span {
+        display: block;
+    }
+}
+
+.site-copyright {
+    margin-top: 2rem;
+    flex-basis: 100%;
+    display: block;
+}

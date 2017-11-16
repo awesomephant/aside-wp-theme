@@ -1,0 +1,84 @@
+.home-hero {
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-clip: padding-box;
+    border: 1rem solid transparent;
+    position: relative;
+    @include bp(s){
+       height: 60vh;
+    }
+    @include bp(m){
+       margin-bottom: 3rem;
+       height: 80vh;
+    }
+}
+
+.home-title {
+    font-size: 25vw;
+    color: white;
+    text-align: center;
+    width: 100%;
+    position: static;
+    @include bp(m){
+        font-size: 18vw;
+    }
+}
+
+.home-info {
+    font-size: 1.05rem;
+    @include bp(m){
+        font-size: 1.3rem;
+    }
+    @include bp(l){
+        font-size: 1.4rem;
+    }
+    padding-left: 5%;
+    text-align: left;
+    padding-bottom: 2rem;
+    section {
+        position: relative;
+        padding-left: 2rem;
+        margin-bottom: 1rem;
+        padding-right: 1rem;
+        @include bp(m){
+            padding-left: 3rem;
+        }
+    }
+    em {
+        font-style: normal;
+        white-space: nowrap;
+    }
+    h2 {
+        transform: rotate(90deg);
+        transform-origin: left bottom;
+        position: absolute;
+        display: inline;
+        left: 0;
+        top: -1em;
+        font-size: 80%;
+        @include bp(m){
+            font-size: 100%;
+        }
+    }
+    span {
+        display: block;
+    }
+}
+
+.home-section-content {
+    max-width: 30em;
+    line-height: 1.35;
+    margin-bottom: 1rem;
+    ul {
+        margin-bottom: 1rem;
+    }
+    li {
+        list-style: none;
+    }
+}

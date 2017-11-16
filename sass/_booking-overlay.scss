@@ -1,0 +1,34 @@
+#fancybox-wrap {
+    width: 90% !important;
+    top: 1rem !important;
+    position: fixed !important;
+    padding: 0 !important;
+    left: 5% !important;
+}
+#fancybox-close {
+    top: 0 !important;
+    right: 2px !important;
+    border: 0 !important;
+    background-image: url(./assets/icons/close.svg) !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    &:after {
+        display: none !important;
+    }
+}
+#fancybox-outer {
+    background: white !important;
+    height: 90vh !important;
+    padding: 0 !important;
+}
+#fancybox-inner {
+    width: 90% !important;
+    iframe {
+        width: 100% !important;
+//        height: 1000px;
+    }
+}
+
+.fancy-bg, #fancybox-overlay {
+    display: none !important;
+}

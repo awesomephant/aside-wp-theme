@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Larish";
+  src: url("./fonts/larish_neue.otf") format("opentype"); }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-weight: 100; }
+
+a {
+  color: #201e23;
+  text-decoration: none;
+  position: relative; }
+  a:after {
+    content: '';
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    background: rgba(32, 30, 35, 0.7); }
+
+* {
+  font-family: Larish, Georgia, "Times New Roman", serif; }
+
+body {
+  padding: 1cm;
+  font-size: 11pt; }
+
+h1 {
+  font-size: 18pt;
+  margin-bottom: 18pt; }
+
+.menu-item {
+  list-style: none; }
+
+/*# sourceMappingURL=true */
